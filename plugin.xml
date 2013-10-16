@@ -10,7 +10,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,jsUtils</keywords>
 
-    <js-module src="www/jsUtils.js" name="datePicker">
+    <js-module src="www/jsUtils.js" name="jsUtils">
         <merges target="navigator.jsUtils" />
     </js-module>
 
