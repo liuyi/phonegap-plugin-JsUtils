@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.ourbrander.pgPlugin.JsUtils"
+    version="0.1">
+
+    <name>JsUtils</name>
+    <description>Cordova JsUtils Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,jsUtils</keywords>
+
+    <js-module src="www/jsUtils.js" name="datePicker">
+        <merges target="navigator.jsUtils" />
+    </js-module>
+
+    
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="JsUtils">
+                <param name="android-package" value="com.ourbrander.pgPlugin.JsUtils"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/JsUtils.java" target-dir="src/com/ourbrander/pgPlugin/" />
+ 
+    </platform>
+
+     
+</plugin>
